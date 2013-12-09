@@ -1,5 +1,7 @@
 # Present Perfect Detector
 # Written by Pawel Mrozik
+# Version 0.1  
+# December 9, 2013
 
 import re
 import time
@@ -36,10 +38,10 @@ def present_perfect_search():
                 
 def read_past_participles():
     print "Reading past participle list...",
-    
+
     with open('past_participle_verbs.txt') as f:
         for line in f:
-            line = line.rstrip('\n')
+            line  = line.rstrip('\n')
             words = line.split(',')
             for w in words:
                 w.strip()
